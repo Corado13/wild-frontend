@@ -19,7 +19,7 @@ export default function TransactionPopup({
   summary,
 }: {
   hash: string
-  success: boolean
+  
   summary: string
 }) {
   const { chainId } = useActiveWeb3React()
@@ -29,7 +29,7 @@ export default function TransactionPopup({
   return (
     <RowNoFlex>
       <div style={{ paddingRight: 16 }}>
-        {success ? (
+        {success  (
           <CheckCircle color={theme.colors.success} size={24} />
         ) : (
           <AlertCircle color={theme.colors.failure} size={24} />
