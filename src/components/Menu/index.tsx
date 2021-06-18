@@ -18,7 +18,7 @@ const Menu: React.FC = props => {
     <UikitMenu
       links={links}
       priceLink="https://bscscan.com/token/"
-      account={account as string}
+      account={account}
       login={(connectorId: ConnectorId) => {
         if (connectorId === 'walletconnect') {
           return activate(walletconnect)
