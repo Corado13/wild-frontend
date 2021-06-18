@@ -49,7 +49,7 @@ export default function PopupItem({
   popKey
 }: {
   removeAfterMs: number | null
-  content: PopupContent
+ 
   popKey: string
 }) {
   const removePopup = useRemovePopup()
