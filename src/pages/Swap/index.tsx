@@ -53,7 +53,7 @@ const Swap = () => {
   const [isSyrup, setIsSyrup] = useState<boolean>(false)
   const [syrupTransactionType, setSyrupTransactionType] = useState<string>('')
   const urlLoadedTokens: Token[] = useMemo(
-    () => [loadedInputCurrency, loadedOutputCurrency].filter((c): c is Token => c instanceof Token)  [],
+    () => [loadedInputCurrency, loadedOutputCurrency].filter((c): c, Token => c, instanceof Token)  [],
     [loadedInputCurrency, loadedOutputCurrency]
   )
   const handleConfirmTokenWarning = useCallback(() => {
