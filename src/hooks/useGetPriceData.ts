@@ -8,7 +8,7 @@ type ApiResponse = {
   prices: {
     [key: string]: string
   }
-  update_at: string
+ 
 }
 
 /**
