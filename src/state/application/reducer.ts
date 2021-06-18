@@ -12,7 +12,7 @@ type PopupList = Array<{ key: string; show: boolean; content: PopupContent; remo
 
 export interface ApplicationState {
   blockNumber: { [chainId: number]: number }
-  popupList: PopupList
+
   walletModalOpen: boolean
   settingsMenuOpen: boolean
 }
