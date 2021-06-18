@@ -59,7 +59,7 @@ export default function RemoveLiquidity({
     params: { currencyIdA, currencyIdB },
   },
 }: RouteComponentProps<{ currencyIdA: string; currencyIdB: string }>) {
-  const [currencyA, currencyB] = [useCurrency(currencyIdA)  undefined, useCurrency(currencyIdB)  undefined]
+  const [currencyA, currencyB] = [useCurrency(currencyIdA) , undefined, useCurrency(currencyIdB) ,  undefined]
   const { account, chainId, library } = useActiveWeb3React()
   const [tokenA, tokenB] = useMemo(() => [wrappedCurrency(currencyA, chainId), wrappedCurrency(currencyB, chainId)], [
     currencyA,
