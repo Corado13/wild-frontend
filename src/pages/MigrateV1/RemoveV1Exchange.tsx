@@ -37,7 +37,7 @@ function V1PairRemoval({
   token,
 }: {
   exchangeContract: Contract
-  liquidityTokenAmount: TokenAmount
+
   token: Token
 }) {
   const { chainId } = useActiveWeb3React()
