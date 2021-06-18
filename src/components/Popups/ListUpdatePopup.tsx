@@ -20,7 +20,6 @@ export default function ListUpdatePopup({
   auto,
 }: {
   popKey: string
-  listUrl: string
   oldList: TokenList
   newList: TokenList
   auto: boolean
