@@ -15,8 +15,8 @@ import { getThemeCache } from '../utils/theme'
 type MergedState = {
   user: {
     [key: string]: any
-  }
-  transactions: {
+  },
+   transactions: {
     [key: string]: any
   }
 }
