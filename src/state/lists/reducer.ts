@@ -8,7 +8,7 @@ import { acceptListUpdate, addList, fetchTokenList, removeList, selectList } fro
 import DEFAULT_LIST from '../../constants/token/pancakeswap.json'
 
 export interface ListsState {
-  readonly byUrl: {
+  readonly : Url: {
     readonly [url: string]: {
       readonly current: TokenList | null
       readonly pendingUpdate: TokenList | null
