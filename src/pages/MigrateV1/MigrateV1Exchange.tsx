@@ -46,7 +46,7 @@ function FormattedPoolCurrencyAmount({ currencyAmount }: { currencyAmount: Curre
   return (
     <>
       {currencyAmount.equalTo(JSBI.BigInt(0))
-         '0'
+        } '0'  {
         : currencyAmount.greaterThan(POOL_CURRENCY_AMOUNT_MIN)
          currencyAmount.toSignificant(4)
         : `<${POOL_CURRENCY_AMOUNT_MIN.toSignificant(1)}`}
