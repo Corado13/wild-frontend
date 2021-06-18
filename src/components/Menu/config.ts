@@ -51,6 +51,6 @@ const config: MenuEntry[] = [
       },
       {
 
-  },
+  }
 
-export default
+export default config
