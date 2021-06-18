@@ -21,7 +21,7 @@ function useContract(address: string | undefined, ABI: any, withSignerIfPossible
   return useMemo(() => {
     if (!address || !ABI || !library) return null
     try {
-      return getContract(address, ABI, library, withSignerIfPossible && account  account : undefined)
+      return getContract(address, ABI, library, withSignerIfPossible && account, account : undefined)
     } catch (error) {
       console.error('Failed to get contract', error)
       return null
