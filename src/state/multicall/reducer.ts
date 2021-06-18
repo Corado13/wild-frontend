@@ -18,7 +18,7 @@ export interface MulticallState {
         [blocksPerFetch: number]: number
       }
     }
-  }
+  },
 
   callResults: {
     [chainId: number]: {
