@@ -11,12 +11,12 @@ const rotate = keyframes`
   }
 `
 
-const StyledSVG = styled.svg<{ size: string; stroke?: string }>`
+const StyledSVG = styled.svg<{ size: string, stroke: string }>`
   animation: 2s ${rotate} linear infinite;
   height: ${({ size }) => size};
   width: ${({ size }) => size};
   path {
-    stroke: ${({ stroke, theme }) => stroke ?? theme.colors.primary};
+    stroke: ${({ stroke, theme }) => stroke theme.colors.primary};
   }
 `
 
@@ -24,7 +24,7 @@ const StyledSVG = styled.svg<{ size: string; stroke?: string }>`
  * Takes in custom size and stroke for circle color, default to primary color as fill,
  * need ...rest for layered styles on top
  */
-export default function Loader({ size = '16px', stroke, ...rest }: { size?: string; stroke?: string }) {
+export default function Loader({ size = '16px', stroke, ...rest }: { size: string, stroke: string }) {
   return (
     <StyledSVG viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" size={size} stroke={stroke} {...rest}>
       <path
